@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bruno Ábia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="particles-js"></div>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">about</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">work</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+        <img src="perfil.jpg" class="img-responsive"/>
+        <h1>Bruno Ábia</h1>
+        <h2>Data Scientist / Software Developer / Human</h2>
+        <div id="menu">
+            <a onclick="showabout()">about</a>
+            <a onclick="showwork()">work</a>
+        </div>
+        <table>
+                <tr>
+                    <td class="animated zoomIn" style="animation-delay:2.2s;">
+                      <a href="https://www.facebook.com/brunoabia/" class="social"><i class="fab fa-facebook"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.4s;">
+                      <a href="https://twitter.com/brunoabia" class="social"><i class="fab fa-twitter"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.6s;">
+                      <a href="https://www.instagram.com/brunoabia/" class="social"><i class="fab fa-instagram"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.6s;">
+                      <a href="https://www.linkedin.com/in/brunoabia/" class="social"><i class="fab fa-linkedin"></i></a></td>
+                    <!-- <td class="animated zoomIn" style="animation-delay:2.8s;">
+                      <a class="social"><i class="fab fa-dribbble"></i></a></td> -->
+                </tr>
+        </table>
+    </div>
+    <div id="work_container" class="container">
+        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <h1>works.</h1>
+        <section>
+            <h2>Videos and Talks 😎</h2>
+            <button onclick="location.href = 'https://www.youtube.com/channel/UChSYzOBaYGS5OG1AlPZilsw';"
+            class="btn_two">[PyData Manaus 2019] Back-testing and machine learning models</button>
+            <button onclick="location.href = 'https://youtu.be/UcsGB7TAc9s';"
+            class="btn_two">[PySE 2018] Machine Learning com Python - da teoria ao primeiro deploy em produção</button>
+            <button onclick="location.href = 'https://www.youtube.com/watch?v=mTcxsfJhkNQ&list=PL62G310vn6nHZ1d9QjFNgsJ6r5ABySjj4';"
+            class="btn_two">Youtube Channel</button>
+
+            <h2>Codes and Repos 😄</h2>
+              <button onclick="location.href = 'https://github.com/brunoasouza/TechnoDrinkSherbrooke';"
+              class="btn_one">[Techno Drink Sherbrooke 2020] Back-testing and machine learning models</button>
+              <button onclick="location.href = 'https://github.com/brunoasouza/basic-angular-springboot';"
+              class="btn_one">Integration between Java springboot and NodeJs</button>
+
+            <h2>Papers 👨‍🎓</h2>
+            <button onclick="location.href = 'https://jserd.springeropen.com/articles/10.1186/s40411-018-0052-6';"
+            class="btn_two">Supporting governance of mobile application developers from mining and analyzing technical questions in stack overflow</button>
+            <button onclick="location.href = 'https://ares.unasus.gov.br/acervo/html/ARES/10589/1/DESAFIOS%20E%20SOLU%C3%87%C3%95ES_Cap6.pdf';"
+            class="btn_two">DESAFIOS E SOLUÇÕES TECNOLÓGICAS DA UNA-SUS/UEA NA QUALIFICAÇÃO DOS PROFISSIONAIS DE SAÚDE DA REGIÃO AMAZÔNICA.</button>
+            <button onclick="location.href = 'https://sol.sbc.org.br/index.php/brasnam/article/view/3582';"
+            class="btn_two">Detecção de Categorias de Aspectos Utilizando Redes Neurais Profundas em Avaliações Online</button>
+            <button onclick="location.href = 'https://www.researchgate.net/publication/318429156_Uma_Abordagem_para_Deteccao_de_Topicos_Relevantes_em_Redes_Sociais_Online';"
+            class="btn_two">Uma Abordagem para Detecção de Tópicos Relevantes em Redes Sociais Online</button>
+            <button onclick="location.href = 'https://www.researchgate.net/publication/318429163_Uma_Abordagem_para_Identificacao_de_Entidades_Influentes_em_Eventos_Comentados_nas_Redes_Sociais_Online';"
+            class="btn_two">Uma Abordagem para Identificação de Entidades Influentes em Eventos Comentados nas Redes Sociais Online</button>
+            <button onclick="location.href = 'https://www.researchgate.net/publication/339636952_Quantificando_a_Importancia_de_Emojis_e_Emoticons_para_Identificacao_de_Polaridade_em_Avaliacoes_Online';"
+            class="btn_two">Quantificando a Importância de Emojis e Emoticons para Identificação de Polaridade em Avaliações Online</button>
+            <button onclick="location.href = 'https://dl.acm.org/doi/10.1145/3131151.3131167';"
+            class="btn_two">Hearing the Voice of Developers in Mobile Software Ecosystems</button>
+            <button onclick="location.href = 'https://dl.acm.org/doi/10.1145/3126858.3126884';"
+            class="btn_two">On the Analysis of Users Engaged in Twitter's Trend Topics</button>
+            <button onclick="location.href = 'https://sol.sbc.org.br/index.php/sbrc/issue/view/167';"
+            class="btn_two">Um Método de Detecção de Regiões Funcionais Utilizando Dados de Redes Sociais</button>
+            <button onclick="location.href = 'https://www.unasusamazonia.com.br/artigo-una-sus-recomenda-uma-abordagem-computacional-aplicada-a-educacao-continuada-na-area-de-saude/';"
+            class="btn_two">UNA-SUS Recomenda: Uma Abordagem Computacional Aplicada à Educação Continuada na Área de Saúde</button>
+            <button onclick="location.href = 'https://dl.acm.org/doi/10.1145/3126858.3131576';"
+            class="btn_two">Detecting Hate, Offensive, and Regular Speech in Short Comments</button>
+            <button onclick="location.href = 'https://www.researchgate.net/publication/309760257_For_or_Against_Polarity_Analysis_in_Tweets_about_Impeachment_Process_of_Brazil_President';"
+            class="btn_two">For or Against?: Polarity Analysis in Tweets about Impeachment Process of Brazil President</button>
+            <button onclick="location.href = 'https://dl.acm.org/doi/10.1145/2976796.2988180';"
+            class="btn_two">Sentiment Analysis of Portuguese Comments from Foursquare</button>
+        </section>
+    </div>
+    <div id="about_container" class="container">
+            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+            <h1>Hi! My name is Bruno</h1>
+            <section>
+                <h2>About me</h2>
+                <p>
+                    I'm 29 years old, I'm from Brazil (Manaus =D). I live in Sherbrooke, QC, Canadá.
+                    I'm Computer Engineer (FUCAPI/BR) and Master in Computer Science (UFAM/BR).
+                    I have five years of experience with application development in: Java, ASP, ASP.net and Android.
+                    I'm currently (I started 4 years ago) focused on Python, R, Machine Learning and Deep Learning.
+                <p>
+                  I love machine learning, Python and Data Science and....
+                  As main contributions in data science area:
+                  <p>- 6 full papers</p>
+                  <p>- 4 expanded abstracts</p>
+                  <p>- 1 book chapter</p>
+                  <p>- and 1 YouTube channel to share knowledge about Machine.</p>
+                </p>
+            </section>
+            <section>
+                <h2>Languages</h2>
+                <p>
+                    Portuguese, English and French
+                </p>
+            </section>
+        </div>
+
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
